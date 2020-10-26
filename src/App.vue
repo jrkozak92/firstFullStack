@@ -31,6 +31,11 @@
         background-size: cover;
       }
 
+
+      a button{
+        color:none;
+      }
+
       .navbar{
         position:relative;
         padding:10px 10px 0px 10px;
