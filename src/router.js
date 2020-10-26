@@ -7,14 +7,14 @@ export default new Router({
     mode: "history",
     routes: [
         {
-            path: "/",
+            path: "/site-manager/info",
             alias: "/info",
             name: "info",
             component: () => import("./components/info")
         },
         // duplicate above code for all components
         {
-            path: "/db",
+            path: "/site-manager/db",
             name: "Database",
             component: () => import("./components/database")
         }

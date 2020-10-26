@@ -3,10 +3,10 @@
         <nav class="navbar">
             <a href="#" class="top">Joey's Site</a>
             <button class="navbutton">
-                <a href="/info" class="navlink">Info</a>
+                <a href="/site-manager/info" class="navlink">Info</a>
             </button>
             <button class="navbutton">
-                <a href="/db" class="navlink">Database</a>
+                <a href="/site-manager/db" class="navlink">Database</a>
             </button>
         </nav>
         <div class="container">
