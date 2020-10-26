@@ -14,12 +14,12 @@ echo 'www.joeykozak.com' > CNAME
 
 # git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'redeploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push origin master
+#git push origin master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+git push -f git@github.com:jrkozak92/site-manager.git master:gh-pages
 
 cd -
