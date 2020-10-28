@@ -5,19 +5,25 @@ Vue.use(Router);
 
 export default new Router({
     mode: "history",
-    base: "https://www.joeykozak.com/site-manager/",
+    base: process.env.NODE_ENV === "production" ? "www.joeykozak.com/site-manager" : "/site-manager",
     routes: [
         {
-            path: "/info",
+            path: "./info",
             alias: "/info",
             name: "info",
             component: () => import("./components/info")
         },
         // duplicate above code for all components
         {
-            path: "/db",
+            path: "./db",
             name: "Database",
             component: () => import("./components/database")
+        },
+
+        // the following handles 404s from GitHub not allowing vue-rotuer to do its thing
+        {
+            path: "*",
+            component: () => import("./components/404")
         }
     ]
 })

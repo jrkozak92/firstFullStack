@@ -1,6 +1,6 @@
 <template>
   <div class="component">
-    Database interaction will go here
+    404: Component not found
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 // import DataService from "../services/DataService";
 
 export default {
-  name: 'database',
+  name: '404',
   data () {
     return {
         publicPath: process.env.BASE_URL

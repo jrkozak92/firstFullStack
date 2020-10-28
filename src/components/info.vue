@@ -8,6 +8,11 @@
 // import DataService from "../services/DataService";
 
 export default {
-  name: 'info'
+  name: 'info',
+  data () {
+    return {
+        publicPath: process.env.BASE_URL
+    }
+  }  
 }
 </script>
