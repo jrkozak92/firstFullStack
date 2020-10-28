@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0bff10"],{4053:function(t,a,e){"use strict";e.r(a);var n=function(){var t=this,a=t.$createElement,e=t._self._c||a;return e("div",{staticClass:"component"},[t._v(" Database interaction will go here ")])},c=[],o={name:"database",data:function(){return{publicPath:"https://www.joeykozak.com/site-manager/"}}},s=o,i=e("2877"),l=Object(i["a"])(s,n,c,!1,null,null,null);a["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d0bff10.cb19d5f7.js.map
