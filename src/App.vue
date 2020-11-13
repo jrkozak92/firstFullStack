@@ -36,6 +36,10 @@
         color:black;
       }
 
+      p{
+        text-align:left;
+      }
+
       .navbar{
         position:relative;
         padding:10px 10px 0px 10px;

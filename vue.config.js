@@ -5,5 +5,5 @@ module.exports = {
 }
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "https://www.joeykozak.com/site-manager/" : "/site-manager/"
+    publicPath: process.env.NODE_ENV === "production" ? "/site-manager/" : "/"
 }

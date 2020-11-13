@@ -5,18 +5,19 @@ Vue.use(Router);
 
 export default new Router({
     mode: "history",
-    base: process.env.NODE_ENV === "production" ? "www.joeykozak.com/site-manager" : "/site-manager",
+    base: process.env.NODE_ENV === "production" ? "/site-manager/" : "/",
     routes: [
         {
             path: "./info",
-            alias: "/info",
+            alias: ["/info", "/"],
             name: "info",
             component: () => import("./components/info")
         },
         // duplicate above code for all components
         {
             path: "./db",
-            name: "Database",
+            alias: "/db",
+            name: "database",
             component: () => import("./components/database")
         },
 
