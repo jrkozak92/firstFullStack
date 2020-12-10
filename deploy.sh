@@ -3,23 +3,26 @@
 # abort on errors
 set -e
 
-# build
-npm run build
+# build in CMD
+# npm run build
 
 # navigate into the build output directory
 cd dist
 
 # if you are deploying to a custom domain
-# echo 'www.joeykozak.com' > CNAME
+echo 'www.joeykozak.com' > CNAME
 
-# git init
+git init
 git add -A
 git commit -m 'redeploy'
 
+cd ..
+
 # if you are deploying to https://<USERNAME>.github.io
-#git push origin master
+git push origin master
+
+
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:jrkozak92/site-manager.git master
+# git push -f git@github.com:jrkozak92/site-manager.git master:gh-pages
 
-cd -
